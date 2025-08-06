@@ -34,3 +34,5 @@ Proyecto backend en Java que permite registro, login y acceso protegido mediante
 
 - Endpoint protegido (requiere JWT en el header):
 - GET http://localhost:8080/otro/test
+
+## Desarrollado por JaviDev707
