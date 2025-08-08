@@ -39,6 +39,9 @@ GET http://localhost:8080/otro/test
 
 - Endpoint protegido (requiere JWT de ADMIN en el header): \
 GET http://localhost:8080/api/admin/todos
+
+- Imagen que muestra el correcto funcionamiento del endpoint api/admin/todos. Al pasarle el token de un ADMIN devuelve una lista (json) con todos los usuarios que estan registrados en la base de datos \
+
 ![Acceso exitoso al endpoint como ADMIN](img/endpoint_ADMIN.png)
 
 ## Proximas mejoras
