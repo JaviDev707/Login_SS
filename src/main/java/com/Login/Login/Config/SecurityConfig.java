@@ -31,6 +31,7 @@ public class SecurityConfig {
             .csrf(csrf -> csrf.disable()) // Desactivo CSRF por JWT
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers("/api/auth/**").permitAll() // Rutas públicas
+                .requestMatchers("/api/admin/**").hasRole("ADMIN") // ADMIN
                 .anyRequest().authenticated() // Cualquier otra requiere autenticación
             )
             .sessionManagement(session -> session

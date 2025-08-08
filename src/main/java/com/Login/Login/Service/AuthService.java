@@ -32,7 +32,7 @@ public class AuthService {
         if (usuarioRepository.existsByEmail(request.email())) {
             throw new RuntimeException("El email ya esta en uso.");
         }
-        // Creao el usuario
+        // Creo el usuario
         Usuario usuario = new Usuario();
         usuario.setUsername(request.username());
         usuario.setEmail(request.email());
@@ -43,6 +43,7 @@ public class AuthService {
         // Genero un JWT
         String token = jwtUtil.generateToken(usuario);
         // Devuelvo AuthResponse
+        System.out.println("Usuario registrado con éxito " + usuario);
         return new AuthResponse(token);
     }
 
@@ -58,6 +59,8 @@ public class AuthService {
         }
 
         String token = jwtUtil.generateToken(usuario);
+
+        System.out.println("Usuario logueado con éxito " + usuario.getUsername() + " - " + usuario.getRole());
         return new AuthResponse(token);
     }
 }
