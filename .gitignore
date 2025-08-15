@@ -32,6 +32,7 @@ build/
 ### VS Code ###
 .vscode/
 
-### Local ###
+### Local-Variables ###
 
 application-local.yml
+.env
