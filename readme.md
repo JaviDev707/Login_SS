@@ -28,9 +28,15 @@ Proyecto backend en Java que permite registro, login y acceso protegido mediante
 
 ## Ejecutar y probar el proyecto
 
-### Ejecutar en local: Clonar el proyecto y renombrar \src\main\resources\example-local.yml por application-local.yml e introducir tus credenciales. Ejecutar el proyecto (mvn spring-boot:run).
+### Ejecutar en local
+Clonar el proyecto y renombrar \src\main\resources\example-local.yml por application-local.yml e introducir tus credenciales. \
+Ejecutar el proyecto (mvn spring-boot:run).
 
-### Ejecutar con Docker: Clonar el proyecto y renombrar el archivo .env.example por .env e introducir tus credenciales. Constuir y levantar los contenedores (docker-compose up --build).
+### Ejecutar con Docker 
+Clonar el proyecto y renombrar el archivo .env.example por .env e introducir tus credenciales. \
+Constuir y levantar los contenedores (docker-compose up --build).
+
+##
 
 - Registro de usuario (Genera un JWT): \
 POST http://localhost:8080/api/auth/register
